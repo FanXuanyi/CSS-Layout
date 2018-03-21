@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>水平居中</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .parent {
+            background: #ccc;
+            position: relative;
+            /* height: 1.5em; */
+        }
+        .child {
+            background: #8b8989;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); /* 从左侧0点向左移动自身宽度的50% */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">DEMO</div>
+    </div>
+</body>
+</html>
