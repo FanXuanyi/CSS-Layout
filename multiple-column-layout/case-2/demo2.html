@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两列定宽，一列自适应</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 300px;
+            background: #ccc;
+            display: table;
+            table-layout: fixed;
+        }
+        .left, .center, .right {
+            display: table-cell;
+        }
+        .left, .right {
+            width: 100px;
+            background: deepskyblue;
+        }
+        .center {
+            background: rgb(162, 86, 238);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">left</div>
+        <div class="center">
+            center<br>
+            center
+        </div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
