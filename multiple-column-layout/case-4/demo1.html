@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多列不定宽，一列自适应</title>
+    <style>
+        .left, .right {
+            background: deepskyblue;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .center {
+            background: rgb(162, 86, 238);
+            overflow: hidden;
+            display: inline-block;
+        }
+        .left p, .right p {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <p>left</p>
+        </div>
+        <div class="center">
+            center<br>
+            center
+        </div>
+        <div class="right">
+            <p>right</p>
+        </div>
+    </div>
+</body>
+</html>
